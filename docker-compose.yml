@@ -1,0 +1,42 @@
+version: "3.8"
+
+services:
+  app:
+    container_name: "app"
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    environment:
+      - DB_NAME=user_db
+      - DB_USER=root
+      - DB_PASS=1234
+      - DB_URI=db:3306
+    depends_on:
+      - db
+    ports:
+      - "8080:8080" # application
+
+  db:
+    container_name: "db"
+    image: "mysql:latest"
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    environment:
+      - MYSQL_DATABASE=user_db
+      - MYSQL_ROOT_PASSWORD=1234
+    volumes:
+      - my-db:/var/lib/mysql
+    ports:
+      - "3306:3306"
+
+  adminer:
+    container_name: "adminer"
+    image: adminer
+    restart: always
+    ports:
+      - 8081:8080
+    environment:
+      ADMINER_DEFAULT_SERVER: db
+      ADMINER_DESIGN: nette
+volumes:
+  my-db:
