@@ -37,6 +37,8 @@ mvn clean test
 docker-compose up --build
 ```
 
+Note: The application has data.sql file in src/main/resource with valid user data which will be loaded on start up.
+
 ## Explore Rest APIs
 
 The application defines following CRUD APIs.
