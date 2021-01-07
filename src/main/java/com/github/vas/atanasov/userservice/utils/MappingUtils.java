@@ -105,7 +105,7 @@ public final class MappingUtils {
   }
 
   /**
-   * Maps stream of entities the help of custom {@link PropertyMap} and custom {@link ModelMapper}.
+   * Maps stream of entities with the help of custom {@link PropertyMap} and custom {@link ModelMapper}.
    * if {@link ModelMapper} is null a configured one will be provided.
    *
    * @param entityStream source stream
@@ -140,7 +140,7 @@ public final class MappingUtils {
   }
 
   /**
-   * Maps stream of entities the help of custom {@link PropertyMap} and custom {@link ModelMapper}.
+   * Maps stream of entities with the help of custom {@link PropertyMap} and custom {@link ModelMapper}.
    * if {@link ModelMapper} is null a configured one will be provided.
    *
    * @param source {@link List} of entities
