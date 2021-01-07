@@ -43,7 +43,9 @@ You can access database manager on: http://localhost:8081/?server=db&username=ro
 
 The password is: ***1234***
 
-Note: The application has [data.sql](src/main/resources/data.sql) file with valid user data which will be loaded on start up.
+The application has [data.sql](src/main/resources/data.sql) file with valid user data which will be loaded on start up.
+
+The code was formatting was provided by [google-java-format](https://github.com/google/google-java-format)
 
 ## Explore Rest APIs
 
