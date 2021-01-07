@@ -45,7 +45,7 @@ The password is: ***1234***
 
 The application has [data.sql](src/main/resources/data.sql) file with valid user data which will be loaded on start up.
 
-The code was formatting was provided by [google-java-format](https://github.com/google/google-java-format)
+The code formatting was provided by [google-java-format](https://github.com/google/google-java-format)
 
 ## Explore Rest APIs
 
