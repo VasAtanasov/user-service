@@ -37,6 +37,12 @@ mvn clean test
 docker-compose up --build
 ```
 
+When the application loads open: http://localhost:8080/app/v1/users
+
+You can access database manager on: http://localhost:8081/?server=db&username=root&db=user_db&select=user
+
+The password is: ***1234***
+
 Note: The application has data.sql file in src/main/resource with valid user data which will be loaded on start up.
 
 ## Explore Rest APIs
