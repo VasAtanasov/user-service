@@ -43,7 +43,7 @@ You can access database manager on: http://localhost:8081/?server=db&username=ro
 
 The password is: ***1234***
 
-Note: The application has data.sql file in src/main/resource with valid user data which will be loaded on start up.
+Note: The application has [data.sql](src/main/resources/data.sql) file with valid user data which will be loaded on start up.
 
 ## Explore Rest APIs
 
